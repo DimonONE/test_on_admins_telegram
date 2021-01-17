@@ -1,6 +1,3 @@
-from For_admin import Product
-from CREATE_BASE import ADD_PRODUCT
-from telebot import types
 import telebot
 import time
 import config
