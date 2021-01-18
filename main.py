@@ -17,6 +17,9 @@ def start_message(message):
         bot.send_message(
             message.chat.id, text=" * Создание нового товара: * ", reply_markup=Product.add())
     else:
+#       Удаление сообщения  
+        bot.delete_message(message.chat.id,
+                               message.message_id)
         bot.send_message(
             message.chat.id, text=" * Ви не админ!!!: * ")
 
