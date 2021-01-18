@@ -5,6 +5,12 @@ from mwt import MWT
 
 bot = telebot.TeleBot(config.TOKEN)
 
+# кароткое создание методов
+class ADD_PRODUCT:
+    def __init__(self):
+        data_set = ['categorie', 'name_product', 'color', 'price', 'wight']
+        for data in data_set:
+            self.data = None
 
 @MWT(timeout=60*60)
 def get_admin_ids(bot, chat_id):
